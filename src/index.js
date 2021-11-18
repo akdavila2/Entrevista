@@ -28,10 +28,7 @@ export const users = async () => {
      </article>`;
   };
   let elements = [];
-  directorio.forEach((element) => {
-    elements.push(render(element));
-  });
-  let outPut = elements.join("");
-  renders.innerHTML = outPut;
+  directorio.forEach(element => elements.push(render(element)));
+  renders.innerHTML = elements.join("");
 };
 users();
