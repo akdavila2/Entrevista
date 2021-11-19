@@ -1,6 +1,4 @@
 import { getData } from "../src/utils/getData.js";
-const directorio = await getData();
-console.log("data", directorio);
 
 export const users = async () => {
   const renders = document.getElementById("root");
@@ -30,5 +28,6 @@ export const users = async () => {
   let elements = [];
   directorio.forEach(element => elements.push(render(element)));
   renders.innerHTML = elements.join("");
+  
 };
 users();
