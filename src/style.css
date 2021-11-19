@@ -1,6 +1,8 @@
 .grid-detail {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  min-width: 90%;
+min-height: 95vh;
 }
 
 img {
